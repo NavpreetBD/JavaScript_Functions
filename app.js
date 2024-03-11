@@ -20,7 +20,7 @@ printOdds(-20);
 console.log("EXERCISE 2:\n==========\n");
 function checkAge( age = 0, userName = "guest"){
     let aboveSixteen = `You can drive, ${userName}!`;
-    let belowSixteen = `Sorry, ${userName} but you need to wait under you'reb16.`;
+    let belowSixteen = `Sorry, ${userName} but you need to wait until  you're 16.`;
     if ( age >= 16){
         console.log(aboveSixteen);
     }else {
@@ -32,7 +32,7 @@ function checkAge() {
     let userName = prompt ("What is you name ?");
     let age = prompt ("What is your age?");
     let aboveSixteen = `You can drive, ${userName}!`;
-    let belowSixteen = `Sorry, ${userName} but you need yo wait until you're 16`;
+    let belowSixteen = `Sorry, ${userName} but you need to wait until you're 16`;
     if (age >= 16){
         console.log(aboveSixteen);
     } else {
@@ -55,7 +55,7 @@ function whichQuadrant(x, y){
         console.log(`${x}, ${y} is in Quardrant 4`);
     } else if (x != 0 && y == 0) {
         console.log(`${x}, ${y} is on the x-axis`);
-    } else if (x != 0 && y == 0) {
+    } else if (x == 0 && y != 0) {
         console.log(`${x}, ${y} is on the y-axis`);
     } else {
         console.log(`${x}, ${y} is on the origin`);
@@ -93,7 +93,7 @@ function typeOfTriangle (side1, side2, side3){
                 `Sides ${side1}, ${side2}, ${side3} from an isosceles triangle`
             );
         } else {
-           console.log( `Sides ${side1}, ${side2}, ${side3} from an equilateral triangle`);
+           console.log( `Sides ${side1}, ${side2}, ${side3} from an scalene triangle`);
         }
     }
     if (isValid == false){
